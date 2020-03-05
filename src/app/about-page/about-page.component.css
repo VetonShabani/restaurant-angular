@@ -1,0 +1,45 @@
+#about-title {
+    background: black;
+    color: #fff;
+    font-size: 4em;
+    box-shadow: 0px 2px 5px #303238;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    margin-left: -125px;
+    margin-top: 50px;
+    text-align: center;
+    transition: margin 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+}
+
+#about-title.active {
+    margin-left: 0px;
+}
+
+.parallax {
+    text-align: center;
+    background: url('../../pics/Background-Wallpaper.jpg');
+    height: 100vh;
+    padding-top: 150px;
+    /* margin-left: -30px; */
+}
+
+.parallax-overlay{
+    margin: 0 auto;
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    margin-left: 70px;
+}
+
+@media (max-width: 520px) {
+    .parallax-overlay {
+        width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-title {
+        margin-left: 0px;
+    }
+}

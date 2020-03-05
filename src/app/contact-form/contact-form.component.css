@@ -1,0 +1,75 @@
+.section {
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0 !important;
+    margin-left: 0px;
+    padding-top: 66px;
+}
+
+#contact-title {
+    background: black; /* fallback for old browsers */
+    color: #fff;
+    font-size: 4em;
+    box-shadow: 0px 2px 5px #303238;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    margin-left: -125px;
+    margin-top: -20px;
+    transition: margin 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+}
+
+#contact-title.active {
+    margin-left: 0px;
+}
+.background {
+    background: url(../../pics/Background-Wallpaper.jpg);
+    height: 100vh;
+    padding-top: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+} 
+
+form {
+    margin-top: 150px;
+    margin-left: -150px;
+}
+
+input,
+textarea {
+    width: 60%;
+    margin: 10px auto 10px auto;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    resize: none;
+    padding: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type="submit"] {
+    background: transparent;
+    border: 3px solid white ;
+    transition: 0.5s all;
+    cursor: pointer;
+    color:white;
+}
+
+input[type="submit"]:hover {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contact-title {
+        margin-left: 0;
+    }
+    
+    input,
+    textarea {
+        width: 75%;
+    }
+}

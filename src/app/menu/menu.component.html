@@ -1,0 +1,26 @@
+<div class="section">
+  <h1 id="menu-title">MENU</h1>
+  <div class="wrapping container">
+    <div class="col-12 container portion">
+      <div class="row">
+        <div class="col-12">
+          <h2>PIZZAS</h2>
+        </div>
+      </div>
+      <div *ngFor="let key of objectKeys(pizza)" class="row subsection">
+        <div class="col-12">
+          <h3>{{ key | uppercase }}</h3>
+          <div *ngFor="let item of objectKeys(pizza[key])" class="row">
+            <div class="col-12">
+              <div class="item">
+                <h4>{{ item }} ${{ pizza[key][item].price }}</h4>
+                <p>{{ pizza[key][item].description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
