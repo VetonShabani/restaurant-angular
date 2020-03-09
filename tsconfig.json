@@ -8,12 +8,7 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "paths": {
-      "@/*": [
-          "app/*"
-      ]
-  },
-    "module": "esnext",
+    "module": "es2015",
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
@@ -23,7 +18,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@environments/*": ["src/environments/*"]
+    },
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

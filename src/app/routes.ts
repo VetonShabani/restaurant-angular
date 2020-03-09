@@ -17,6 +17,6 @@ export const routes: Routes = [
     { path: 'contact', component: ContactFormComponent },
     // { path: 'login', component: LoginComponent},
     { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: '**', redirectTo: 'home'}
+    { path: 'register', component: RegisterComponent }
+    // { path: '**', redirectTo: 'home'}
 ];
